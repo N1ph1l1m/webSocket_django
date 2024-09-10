@@ -78,6 +78,7 @@ TEMPLATES = [
 
 #channel
 ASGI_APPLICATION ='webSocket.asgi.application'
+
 CHANNEL_LAYERS = {
     "default":{
         "BACKEND":"channels_redis.core.RedisChannelLayer",
@@ -93,7 +94,7 @@ CHANNEL_LAYERS = {
 # CHANNEL_LAYERS = {
 #     'default' : {
 #         'BACKEND' : 'channels_redis.core.RedisChannelLayer',
-#         'CONFIG': {
+#         'CONFIG': { л
 #             'host':[('127.0.0.1', 6379)],
 #         }
 #     }
